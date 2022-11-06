@@ -1,0 +1,30 @@
+.buttom_reset {
+    display: flex;
+    height: 1rem;
+    align-items: center;
+    padding: 1em 8px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #0b1b429f;
+    color: #fff;
+}
+
+.buttom_reset:hover{
+    background-color: #16388d9f;
+}
+.buttom_reset:active{
+    box-shadow: 1px 1px 5px rgb(2, 9, 39);
+}
+
+
+@media(max-width:500px) {
+    .buttom_reset {
+        width: 100%;
+        justify-content: center;
+        font-size: 1em;
+        height: 18px;
+    }
+}

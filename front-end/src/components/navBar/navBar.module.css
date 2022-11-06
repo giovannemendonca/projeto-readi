@@ -1,0 +1,37 @@
+.reader_box {
+    height: 8vh;
+    width: 100%;
+    background-color: #1e3547;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    min-width: 250px;
+    gap: 20px;
+    padding-left: 4px;
+}
+
+.link {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: #1e3547;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.link:hover{
+    color: #426d8f;
+    transition: .7s;
+}
+
+
+@media(max-width: 450px){
+    .reader_box {
+        justify-content: center;
+    }
+    .link {
+        font-size: 1.5rem;
+    }
+}
