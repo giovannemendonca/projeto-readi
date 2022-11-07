@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "LittleBoy1945",
+    "password": "**********",
     "database": "readi",
     "host": "127.0.0.1",
     "dialect": "mysql"
