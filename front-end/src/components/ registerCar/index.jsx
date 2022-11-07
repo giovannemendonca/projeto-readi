@@ -17,12 +17,11 @@ export default function RegisterCar({ setSucess }) {
   const postData = (date) => {
 
     try {
-      api.post('/carros', date)
+      api.post('/cars', date)
       setSucess(true)
-      alert('Carro cadastrado com sucesso!')
 
     } catch (error) {
-      console.log(error)
+      alert(error.messege)
     }
 
   }
