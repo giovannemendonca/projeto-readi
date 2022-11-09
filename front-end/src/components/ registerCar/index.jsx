@@ -6,6 +6,7 @@ import { useForm } from 'react-hook-form'
 import styles from './cadastroCarro.module.css'
 
 
+
 export default function RegisterCar({ setSucess }) {
 
   const { register, handleSubmit, formState: { errors } } = useForm();
@@ -16,14 +17,9 @@ export default function RegisterCar({ setSucess }) {
 
   const postData = (date) => {
 
-    try {
-      api.post('/cars', date)
-      setSucess(true)
-
-    } catch (error) {
-      alert(error.messege)
-    }
-
+    api.post('/cars', date)
+      .then((response) => setSucess(true))
+      .catch((err) => alert(err.response.data.messege))
   }
 
   return (

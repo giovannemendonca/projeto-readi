@@ -66,7 +66,9 @@ class CarsController {
         const newCar = await db.Cars.create(body);
         return res.status(200).json(newCar);
       }
-      res.status(500).json({ messege: `Carro já cadastrado` });
+
+      res.status(404).json({ messege: `Carro já cadastrado` });
+
     } catch (error) {
       return res.status(500).json(error.messege);
     }
